@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        String[] strings = {"Apple", "Banana", "Orange", "Mango", "Pineapple", "Grapes"};
+
+        System.out.println("Strings ending with vowels:");
+        for (String str : strings) {
+            if (str.toLowerCase().endsWith("a") || str.toLowerCase().endsWith("e") || str.toLowerCase().endsWith("i") || str.toLowerCase().endsWith("o") || str.toLowerCase().endsWith("u")) {
+                System.out.println(str);
+            }
+        }
+    }
+}
