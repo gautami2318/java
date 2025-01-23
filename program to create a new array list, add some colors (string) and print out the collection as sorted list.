@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a new ArrayList
+        ArrayList<String> colors = new ArrayList<>();
+
+        // Add some colors to the ArrayList
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Orange");
+        colors.add("Purple");
+
+        // Print out the unsorted ArrayList
+        System.out.println("Unsorted ArrayList:");
+        System.out.println(colors);
+
+        // Sort the ArrayList
+        Collections.sort(colors);
+
+        // Print out the sorted ArrayList
+        System.out.println("\nSorted ArrayList:");
+        System.out.println(colors);
+    }
+}
