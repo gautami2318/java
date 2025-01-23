@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a new ArrayList
+        ArrayList<String> list = new ArrayList<>();
+
+        // Add some elements to the ArrayList
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        list.add("Date");
+
+        // Print out the original ArrayList
+        System.out.println("Original ArrayList:");
+        System.out.println(list);
+
+        // Specify the new element to replace the second element
+        String newElement = "Grapes";
+
+        // Check if the ArrayList has at least two elements
+        if (list.size() >= 2) {
+            // Replace the second element with the new element
+            list.set(1, newElement);
+
+            // Print out the updated ArrayList
+            System.out.println("\nUpdated ArrayList:");
+            System.out.println(list);
+        } else {
+            System.out.println("The ArrayList must have at least two elements.");
+        }
+    }
+}
