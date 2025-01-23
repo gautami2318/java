@@ -1,0 +1,49 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // ArrayList: Multiple nulls are allowed
+        Collection<String> c = new ArrayList<>();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        c.add(null);
+        c.add(null);
+        c.add(null);
+        System.out.println("ArrayList: " + c.toString());
+
+        // LinkedList: Multiple nulls are allowed
+        c = new LinkedList<>();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        c.add(null);
+        c.add(null);
+        c.add(null);
+        System.out.println("LinkedList: " + c.toString());
+
+        // HashSet: Duplicate null is not allowed, but one null is allowed
+        c = new HashSet<>();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        c.add(null);
+        c.add(null);
+        c.add(null);
+        System.out.println("HashSet: " + c.toString());
+
+        // TreeSet: Null is not allowed
+        try {
+            c = new TreeSet<>();
+            c.add("A");
+            c.add("B");
+            c.add("C");
+            c.add(null);
+            c.add(null);
+            c.add(null);
+            System.out.println("TreeSet: " + c.toString());
+        } catch (NullPointerException e) {
+            System.out.println("TreeSet: Null is not allowed");
+        }
+    }
+}
